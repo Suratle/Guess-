@@ -1,0 +1,63 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Sriracha&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 150%;
+}
+
+body {
+  font-family: "Itim", serif;
+  text-align: center;
+  background-color: #fff9db;
+  color: #343a40;
+}
+
+.tutorial h2 {
+  line-height: 2.2;
+}
+
+.clue {
+  font-size: 2.4rem;
+  margin: 2rem;
+}
+
+.hint {
+  margin: 1rem;
+}
+
+.lives,
+.score {
+  margin: 1rem;
+}
+
+.input-section {
+  margin: 2rem;
+}
+
+#guess {
+  font-family: "Sriracha", serif;
+  border-radius: 2rem;
+  text-align: end;
+  padding: 2px;
+}
+#guess::placeholder {
+  padding: 2px;
+}
+button {
+  margin-left: 1.2rem;
+  padding: 6px;
+  border-radius: 10%;
+  transition: all 0.5s;
+}
+
+button:hover {
+  border-radius: 100%;
+  transform: scale(1.2);
+  background-color: #343a40;
+  color: #f1f3f5;
+}

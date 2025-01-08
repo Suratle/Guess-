@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="โลโก้ทาย.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query&animation.css" />
+    <title>เกมทายคำ</title>
+  </head>
+  <body>
+    <h1 class="header">มาทายคำกันเลย!</h1>
+    <div class="clue" id="clue">_ _ _ _ _</div>
+    <div class="hint" id="hint">คำใบ้:</div>
+    <div class="lives" id="lives">จำนวนที่ทายได้: 3</div>
+    <div class="score" id="score">คะแนน: 0</div>
+    <div class="input-section">
+      <input
+        type="text"
+        id="guess"
+        maxlength="10"
+        placeholder="พิมพ์ตัวอักษร"
+      />
+      <button onclick="makeGuess()">ทาย</button>
+    </div>
+    <div id="message"></div>
+    <div class="tutorial">
+      <h2>วิธีเล่น</h2>
+      <p>
+        เป็นชื่อจริงทั้งหมดและอยู่ในบ้านเภาสูตร์<br />
+        ทายได้ 3 ครั้ง และ มีทั้งหมด 5 คำ<br />
+        พิมพ์ตัวอักษรได้แล้วกดปุ่ม "ทาย"
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
