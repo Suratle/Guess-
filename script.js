@@ -5,10 +5,10 @@ const wordsWithHints = [
   { word: "เพลินฤดี", hint: "เป็นผู้หญิงที่ชอบเดินไปเดินมา" },
   { word: "อิทธิวัตร", hint: "เป็นผู้ชายที่ชอบโวยวาย" },
   { word: "จรินทร์", hint: "เป็นผู้หญิงที่ชอบช็อปปิ้ง" },
-  { word: "วันดี", hint: "เป็นผ้หญิงที่่มือสั่น" },
+  { word: "วันดี", hint: "เป็นผู้หญิงที่มือสั่น" },
   { word: "ศิวัช", hint: "เป็นผู้ชายที่เดินชนกระจก" },
   { word: "สรวิศ", hint: "เป็นคนหล่อที่สุดในบ้าน" },
-  { word: "ลีโอ", hint: "เป็นสัตว์เลี้ยงที่ชอบเดินชนเสา" },
+  { word: "ลีโอ", hint: "เป็นสัตว์เลี้ยงแสนน่ารัก" },
 ];
 let currentWord = {};
 let clue = [];
@@ -17,7 +17,7 @@ function startGame() {
   if (wordsWithHints.length === 0 || lives === 0) {
     document.getElementById(
       "message"
-    ).textContent = `จบเกมแล้วจ้า คะแนนรวม: ${score}`;
+    ).textContent = `จบเกมแล้วจ้า คำนั้นคือ ${currentWord.word}คะแนนรวม: ${score}`;
     document.getElementById("clue").textContent = "";
     document.getElementById("hint").textContent = "";
     document.getElementById("lives").textContent = "";
