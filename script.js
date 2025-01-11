@@ -17,7 +17,7 @@ function startGame() {
   if (wordsWithHints.length === 0 || lives === 0) {
     document.getElementById(
       "message"
-    ).textContent = `จบเกมแล้วจ้า คำนั้นคือ ${currentWord.word}คะแนนรวม: ${score}`;
+    ).textContent = `จบเกมแล้วจ้า คำนั้นคือ ${currentWord.word} คะแนนรวม: ${score}`;
     document.getElementById("clue").textContent = "";
     document.getElementById("hint").textContent = "";
     document.getElementById("lives").textContent = "";
